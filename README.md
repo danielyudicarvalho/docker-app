@@ -1,9 +1,5 @@
-# Introdução ao Docker em 22 minutos
-
-Projeto gerado na videoaula do canal no YouTube Programador a Bordo.
-
-Link da aula:
-https://www.youtube.com/watch?v=Kzcz-EVKBEQ
+# Trabalho de computação distribuída
+## UFMS - FACOM
 
 ## Como rodar
 
@@ -47,6 +43,3 @@ docker run -d -v "$(pwd)/website":/var/www/html -p 8888:80 --link node-container
 ```
 docker exec -i mysql-container mysql -uroot -pprogramadorabordo < api/db/script.sql
 ```
-
-
-Para entender melhor sobre cada comando utilizado, assita a videoaula ;)

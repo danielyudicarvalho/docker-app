@@ -4,22 +4,22 @@ const mysql = require('mysql');
 const app = express();
 
 const connection = mysql.createConnection({
-  host: 'mysql-container',
+  host: '172.18.0.2',
   user: 'root',
-  password: 'programadorabordo',
-  database: 'programadorabordo'
+  password: 'root',
+  database: 'tre_ms;'
 });
 
 connection.connect();
 
-app.get('/products', function(req, res) {
-  connection.query('SELECT * FROM products', function (error, results) {
+app.get('/servidores', function(req, res) {
+  connection.query('SELECT * FROM servidor', function (error, results) {
 
     if (error) { 
       throw error
     };
 
-    res.send(results.map(item => ({ name: item.name, price: item.price })));
+    res.send(results.map(item => ({ nome_servidor: item.nome_servidor, cpf: item.cpf, matricula: item.matricula})));
   });
 });
 

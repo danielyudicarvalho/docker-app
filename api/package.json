@@ -1,7 +1,7 @@
 {
   "name": "api",
   "version": "1.0.0",
-  "description": "Programador a bordo",
+  "description": "Trabalho de computação distribuída",
   "main": "index.js",
   "scripts": {
     "test": "test",
@@ -10,7 +10,7 @@
   "keywords": [
     "Docker"
   ],
-  "author": "Ayrton Teshima",
+  "author": "Grupo do trabalho",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^1.19.4"
